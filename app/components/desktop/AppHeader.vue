@@ -41,11 +41,11 @@ const accountItems = computed(() =>
 			<div class="flex-1 min-w-0">
 				<!-- GOLD TOP STRIP full width -->
 				<div class="border-b border-black/35">
-					<div class="mx-auto max-w-7xl">
+					<div class="mx-auto max-w-7xl px-2">
 						<!-- your TOP content row -->
 						<div class="flex items-center justify-between gap-3">
 							<!-- top nav desktop -->
-							<div class="flex h-18 items-center justify-between gap-3 px-2">
+							<div class="flex h-18 items-center justify-between gap-3">
 								<!-- Center: Top nav (desktop) -->
 								<nav
 									class="hidden md:flex items-center gap-2 md:gap-2 lg:gap-4 xl:gap-8 text-[12px] md:text-[12px] xl:text-[13px] font-semibold"
