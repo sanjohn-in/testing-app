@@ -8,14 +8,17 @@ type Item = {
 	to: string;
 	danger?: boolean;
 	width?: string;
+	align?: 'start' | 'center' | 'end';
 };
 const props = withDefaults(
 	defineProps<{
 		items: Item[];
 		width?: string;
+		align?: 'start' | 'center' | 'end';
 	}>(),
 	{
 		width: "100px",
+		align: "end",
 	}
 );
 const open = ref(false);
@@ -50,7 +53,7 @@ function go(to: string) {
 <template>
 	<UPopover
 		v-model:open="open"
-		:content="{ side: 'bottom', align: 'end', sideOffset: 2 }"
+		:content="{ side: 'bottom', align: props.align, sideOffset: 2 }"
 		:ui="{
 			content: 'p-2 bg-white/70 backdrop-blur-md rounded-2xl shadow-lg ring-0',
 		}"

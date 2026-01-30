@@ -26,12 +26,20 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   plugins: [
   ],
-  css: ['~/assets/css/main.css'],
-
+  nitro: {
+    devProxy: {},
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/ui'
+    '@nuxt/ui',
   ],
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: ''
+  },
+  css: ["~/assets/css/main.css"],
+
 })

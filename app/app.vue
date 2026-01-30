@@ -1,6 +1,12 @@
+<script lang="ts" setup>
+import { screenMode } from "@/hooks/useScreenMode";
+const layoutName = computed(() =>
+	screenMode.value === "phone" ? "mobile" : "default"
+);
+</script>
 <template>
 	<Suspense>
-		<NuxtLayout>
+		<NuxtLayout :name="layoutName">
 			<NuxtErrorBoundary />
 			<NuxtLoadingIndicator />
 			<NuxtPage />
@@ -9,3 +15,4 @@
 		<template #fallback> Loading... </template>
 	</Suspense>
 </template>
+<style lang="scss"></style>

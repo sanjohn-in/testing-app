@@ -1,13 +1,9 @@
-<script setup lang="ts">
-definePageMeta({
-	layout: "default",
-});
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<UApp>
 		<header class="sticky top-0 z-50 w-full">
-			<AppHeader />
+			<DesktopAppHeader />
 		</header>
 		<UMain>
 			<slot />

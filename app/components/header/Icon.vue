@@ -16,6 +16,7 @@ import {
 	UserIcon,
 	VideoCameraIcon,
 	WalletIcon,
+	AdjustmentsHorizontalIcon
 } from "@heroicons/vue/24/solid";
 
 const props = defineProps<{ name: string; class?: string }>();
@@ -39,6 +40,7 @@ const map: Record<string, object> = {
 	plus: PlusIcon,
 	down: ChevronDownIcon,
 	calendar: CalendarIcon,
+	settings: AdjustmentsHorizontalIcon,
 };
 
 const Comp = computed(() => map[props.name] ?? ChevronDownIcon);
