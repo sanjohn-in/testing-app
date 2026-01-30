@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       titleTemplate: '%s - App testing!',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Visit beautiful places in Cambodia' },
+        { name: 'description', content: 'Testing app for work' },
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
