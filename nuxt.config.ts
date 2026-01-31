@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
   ],
   colorMode: {
-    preference: 'system',
+    preference: 'light',
     fallback: 'light',
     classSuffix: ''
   },

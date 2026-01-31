@@ -13,12 +13,12 @@ function calc(width: number): ScreenMode {
 }
 
 function update() {
-  if (!process.client) return;
+  if (!import.meta.client) return;
   screenMode.value = calc(window.innerWidth);
 }
 
 export function initScreenMode() {
-  if (!process.client || inited) return;
+  if (!import.meta.client || inited) return;
   inited = true;
 
   update();

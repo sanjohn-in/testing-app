@@ -1,4 +1,3 @@
-import { defineNuxtPlugin, useRequestHeaders } from "#app";
 import { screenMode } from "@/hooks/useScreenMode";
 
 function isMobileUA(ua = "") {

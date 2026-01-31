@@ -26,7 +26,7 @@ const accountItems = computed(() =>
 					<!-- control logo width per breakpoint -->
 					<NuxtLink
 						to="/"
-						class="flex items-center justify-end px-4 sm:px-6 w-[100px] md:w-[160px] lg:w-[250px] xl:w-[300px]"
+						class="flex items-center justify-end px-4 sm:px-6 w-25 md:w-40 lg:w-62.5 xl:w-75"
 					>
 						<div
 							class="text-white text-xl md:text-3xl font-light tracking-widest leading-none"
