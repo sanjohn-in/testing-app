@@ -129,7 +129,7 @@ const authDialogRef = useTemplateRef("authDialog");
 		<div v-else class="flex gap-1">
 			<UButton
 				variant="solid"
-				class="bg-white text-black shadow cursor-pointer rounded-full px-3 py-2 text-xs md:px-6 md:py-1.5 md:text-base hover:bg-white/90"
+				class="bg-white text-black shadow cursor-pointer rounded-full px-3 py-2 text-xs md:px-6 md:py-2 md:text-xs lg:text-sm xl:text-sm hover:bg-white/90"
 				@click="authDialogRef?.openRegister()"
 			>
 				ĐĂNG KÝ
@@ -137,7 +137,7 @@ const authDialogRef = useTemplateRef("authDialog");
 
 			<UButton
 				variant="solid"
-				class="bg-black text-white shadow cursor-pointer rounded-full px-3 py-2 text-xs md:px-4 md:py-1.5 md:text-base hover:bg-black/90"
+				class="bg-black text-white shadow cursor-pointer rounded-full px-3 py-2 text-xs md:px-4 md:py-2 md:text-xs lg:text-sm xl:text-sm hover:bg-black/90"
 				@click="authDialogRef?.openLogin()"
 			>
 				ĐĂNG NHẬP
